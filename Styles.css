@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
+
+body {
+
+}
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+
+h1, .intro-container, h3, h4, h5 {
+    font-family: 'Merriweather', serif, monospace;
+}
+
+nav, h2, .button-header, .background-text, p, a, .services{
+    font-family: 'Roboto', sans-serif, monospace;
+}
+
+.content-container h1, h2, ul a, .button-header, .top-text {
+    color: white;
+}
+
+.intro-container {
+    color: #5722CD;
+}
+
+.background-text{
+    color: #F2F0FF;
+    font-size: 400px;
+}
+
+.question, .services {
+    color: black;
+    font-size: 14px;
+}
+
+.content-container h1 {
+    font-size: 37px;
+}
+
+.intro-container h1 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+
+
+.web-design p, .web-development p, .user-experience p, .logo-design p, .seo p, .copy-writhing p{
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+h4 {
+    font-size: 12px;
+    color: #5722CD;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 22px;
+}
+nav, a {
+    font-size: 14px;
+}
+
+
+
+.button-header{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+header, .intro   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.question a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #5722CD;
+
+}
+
+.content-container, .intro-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 700px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    vertical-align: middle;
+}
+
+.question {
+   padding-top: 40px;
+}
+
+
+/*-----------------nog uitzoeken-----------------*/
+.background-text {
+    position: absolute;
+    bottom: calc(50% - 234px);
+    left: calc(50% - 415px);
+    z-index: -1;
+}
+/*-----------------nog uitzoeken-----------------*/
+ h1 {
+     flex: 1;
+     text-align: center;
+
+}
+ h2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding-top: 18px;
+}
+
+ h4 {
+     padding-top: 25px;
+ }
+ .button-wrap {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 23px;
+     padding-bottom: 75px;
+ }
+
+ .button-header {
+     flex-basis: 213px;
+     flex-shrink: 1;
+     flex-grow: 0;
+     padding: 20px 40px;
+     background-color: #ED4385;
+     border-radius: 45px;
+     border: none;
+     box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.3);
+
+ }
+
+
+ .squiggle-line{
+     position: absolute;
+     bottom: -20px;
+     height: 100px;
+ }
+
+
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    list-style: none;
+    gap: 40px;
+    padding: 20px 80px 20px 100px;
+    /*tekst valt nog naar onderen*/
+}
+
+.triangle {
+    border-bottom: 30px solid white;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.triangle-top  {
+    border-bottom: 30px solid #F3F6F9 ;
+    border-right: 100vw solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.triangle-form {
+    border-bottom: 30px solid transparent;
+    border-right: 100vw solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question a{
+    color: #5722CD;
+}
+
+.work, .worth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.variety {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+
+.rolling-stone-text, .variety-text, .worth-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 300px;
+    padding-top: 200px;
+}
+
+ .worth-text, .worth-image {
+    padding-bottom: 200px;
+}
+
+.squiggle {
+    padding: 10px 0px 0px 0px;
+}
+
+.rolling-stone-image, .variety-image, .worth-image{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 500px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding-top: 200px;
+}
+
+.rolling-stone-image, .variety-image {
+    padding-bottom: 25px;
+}
+
+
+
+.rolling-stone-image img, .variety-image img, .worth-image img {
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.services {
+    position: relative;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 200px 300px 200px 300px;
+}
+
+
+
+.services-container > div {
+    flex-basis: 300px;
+    height: 250px;
+    border-style: solid;
+    border-color: #5722CD;
+    border-width: 1px;
+    padding: 20px;
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+
+.web-design img, .web-development img, .user-experience img, .logo-design img, .seo img, .copy-writhing img{
+    height: 60px;
+}
+
+h5 {
+    color: #5722CD;;
+}
+
+.contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px 200px 0px;
+    position: relative;
+}
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------- */
+
+header, nav, .contact {
+    background-image: linear-gradient( to right, #5722CD, #4845E4, #5722CD );
+}
+
+/* --------------- 4.2 Introduction ------------- */
+
+.intro {
+    background-color: white;
+}
+/* --------------- 4.3 Rolling Stone ------------- */
+
+.work, .variety, .worth {
+    background-color: #F3F6F9;
+}
+
